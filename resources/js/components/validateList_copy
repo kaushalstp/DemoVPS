@@ -1,0 +1,394 @@
+<template>
+    <div>
+        <section class="content-header">
+          	<div class="container-fluid">
+	            <div class="row mb-2">
+	              	<div class="col-sm-6">
+	            	  <h1>Email Verification</h1>
+	                </div>	            
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content page-validatelist">
+
+          <!-- Default box -->
+          <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"></h3>               
+            </div>
+            <div class="card-body">
+
+            	<div class="row" >
+            		
+                    <div class="col-sm-12" >
+                        
+                    	<div class="custom_card" >
+
+                        <p>
+                            <b>Let's Get Started By Uploading Your File Here.</b>
+                        </p>   
+
+
+                        <p>
+                             Have confusion? Please refer our Detailed <a href="https://myemailverifier.com/blog/how-myemailverifier-email-verification-service-works/" >blog</a> about <a href="https://myemailverifier.com/blog/how-myemailverifier-email-verification-service-works/" >"How it works"</a>
+                        </p>
+
+                        <p>
+                             Upload a CSV or TXT file and click on Validate List. We will inform you via email once your list is verified. You can also download results from grid below.
+                        </p>
+
+                        <p>
+                            You will be notified via email once your entire list has been validated.
+                        </p>
+
+                        <p>
+                             You have <big><b>100</b></big> available credits 
+                              <div class="col-sm-2" ><button type="button" class="btn btn-block btn-primary">Buy Credits</button></div>
+                        </p>
+
+
+                        <p><b>Example of Plain text file:</b></p>
+                        <p>
+                            example@domain.com<br/>
+                            example2@domain.com<br/>
+                            example3@domain.com<br/>
+                        </p>
+
+                        <p><b>Example of Comma delimited file (any sequence of field is accepted, our intelligent robot will find email field automatically:</b></p>
+                        <p>
+                            firstname,lastname,example1@domain.com,city,state<br/>
+                            firstname,lastname,example2@domain.com,city,state<br/>
+                            firstname,lastname,example3@domain.com,city,state<br/>
+                            firstname,lastname,example4@domain.com,city,state<br/>
+                        </p>
+
+                    	</div>
+ 
+                        <p>
+                            <b>Start Verification Relax Mode:</b>  Processing will be slow and there will be less unknown results.<br/>                        
+                            <b>Start Verification Rapid Mode:</b> Processing will be fast and there will be more unknown results.
+                        </p>
+                    </div>                    
+
+
+            		<div class="col-sm-12" >
+                        <div class="row" >
+                            <div class="col-sm-3" ></div>
+
+                            <div class="col-sm-6" >
+                    			<div class="card card-primary">
+        			              <div class="card-header">
+        			                 <h3 class="card-title">Upload Email list</h3>
+        			              </div>
+        			              <!-- /.card-header -->
+        			              <!-- form start -->
+        			                 <form role="form">
+            			                <div class="card-body">
+            			                    <div class="form-group">
+                                                <label for="exampleInputFile">(csv)</label>
+                                                <div class="input-group">
+                                                  <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                                  </div>                                      
+                                                </div>
+                                            </div>    			                  		                
+            			                </div>
+            			                <!-- /.card-body -->
+
+            			                <div class="card-footer">
+            			                  <button type="submit" class="btn btn-primary">Validate</button>
+            			                </div>
+
+        			                 </form>
+        			            </div>
+                            </div>
+
+                            <div class="col-sm-3" ></div>
+                        </div>
+            		</div>
+            		
+            	</div>    
+
+                <p>&nbsp;</p>
+
+                <!--
+                <div class="row" >
+
+                        <div class="col-sm-1" >
+                            
+                        </div>
+                        <div class="col-sm-10" >
+                            <div class="col-12 table-responsive">
+                                  <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Filename</th>
+                                            <th>Uploaded Date</th>    
+                                            <th>Valid</th>                  
+                                            <th>Invalid</th>
+                                            <th>Unknown</th>
+                                            <th>Credit Used</th>
+                                            <th>Total</th>
+                                            <th>Status</th>
+                                            <th>Progress</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td>mailist4sep2020.txt</td>
+                                                <td>4-9-2020</td>    
+                                                <td>100</td>                  
+                                                <td>7</td>
+                                                <td>5</td>
+                                                <td>112</td>
+                                                <td>112</td>
+                                                <td>verified</td>
+                                                <td>completed</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>mailist5sep2020.txt</td>
+                                                <td>5-9-2020</td>    
+                                                <td>50</td>                  
+                                                <td>5</td>
+                                                <td>2</td>
+                                                <td>57</td>
+                                                <td>57</td>
+                                                <td>verified</td>
+                                                <td>completed</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>mailist6sep2020.txt</td>
+                                                <td>6-9-2020</td>    
+                                                <td>245</td>                  
+                                                <td>14</td>
+                                                <td>8</td>
+                                                <td>267</td>
+                                                <td>267</td>
+                                                <td>verified</td>
+                                                <td>completed</td>
+                                            </tr>
+
+                                        </tbody>
+                                  </table>
+                            </div>                
+                        </div>
+
+                        <div class="col-sm-1" >
+                            
+                        </div>                    
+                </div>
+                -->
+
+                <div class="row" >                    
+                    <div class="col-sm-1" ></div>
+                    <div class="col-sm-10" >
+                        <span class="chartinfoindicator pieboxtotal" ></span> Total &nbsp;
+                        <span class="chartinfoindicator pieboxvalid" ></span> Valid &nbsp;
+                        <span class="chartinfoindicator pieboxinvalid" ></span> Invalid &nbsp;
+                        <span class="chartinfoindicator pieboxunknown" ></span> Unknown &nbsp;
+                    </div>
+                    <div class="col-sm-1" ></div>
+                    <div class="col-sm-1" ></div>
+                    <div class="col-sm-10" >
+                        
+                    </div>
+                    <div class="col-sm-1" ></div>
+                </div>
+            
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              
+            </div>
+            <!-- /.card-footer-->
+          </div>
+          
+          <!-- /.card -->
+        </section>
+    </div>  
+</template>
+
+<style>
+    .resultstatus{
+        margin: 20px 0;
+    }
+
+    .resultstatus label {
+        padding: 0 0 0 12px;
+    }
+
+    .dwnldsec{
+        padding: 5px 0 0 0;
+    }
+
+    .uploaddate{
+        float:left;
+        width:100%;
+        font-style: italic;
+        margin: 0 0 10px 0;        
+    }
+    
+
+    .chartinfoindicator{
+        height:10px;
+        width:20px;
+        display: inline-block;
+    }
+
+    .pieboxtotal{
+        background-color:#f39c12;
+    }
+    .pieboxvalid{
+        background-color:#00a65a;
+    }
+    .pieboxinvalid{
+        background-color:#f56954;
+    }
+    .pieboxunknown{
+        background-color:#3c8dbc;
+    }
+
+    .filename big{
+        color:#a52a2a;
+    }
+
+    .filename{        
+        float:left;
+        width:100%;
+    }
+
+    .validation_info{
+        background-color:#e2f2f7;
+        float: left;
+        width: 100%;
+        padding:20px 10px 10px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+	
+	.custom_card{
+		background-color:#d3d3d3;		
+		border-radius: 5px;
+		padding: 10px;
+		margin: 0 0 15px 0;
+	}
+    .page-validatelist .card-body{
+        
+    }
+    p{
+        font-size: 16px;        
+    }
+    .highlighted_para{        
+        background-color: lightgrey;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>    
+
+    
+    // const ctx = document.getElementById('planet-chart');
+        var planetChartData = {
+          type: 'pie',
+          data: {
+            /*labels: ['Total','Success','Failed','Unknown'],*/
+            datasets: [
+              { // one line graph
+                label: 'Number of Moons',
+                data: [100,80,11,9],
+                backgroundColor: [
+                  '#f39c12', // Blue
+                  '#00a65a',
+                  '#f56954',                  
+                  '#3c8dbc'
+                ],
+                borderColor: [
+                  '#fff',
+                  '#fff',
+                  '#fff',                  
+                  '#fff',                  
+                ],
+                borderWidth: 3
+              },              
+            ]
+          },
+          options: {
+            responsive: true,
+            lineTension: 1,
+            
+          }
+        }
+     
+    export default {
+        name:'ValidateList',                
+        data:function(){
+          return{
+            historyData:[],
+            planetChartData: planetChartData,
+
+            type: 'bar', // was "line"
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [
+                {
+                    label: 'Number of Moons',
+                    type: 'line', // Add this
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3
+                },                
+            ]
+
+          }
+        },
+        mounted(){
+            this.createChart('planet-chart', this.planetChartData);
+            var thisObj = this;
+            //thisObj.historyData = [];
+
+            this.axios.get(api_url+'validationhistory/1')
+            .then(function(response){
+                if(response.data.status == "1"){ 
+                    console.log(response);    
+                    //thisObj.historyData = response.data.data;
+                    //console.log(thisObj.historyData);                        
+                }
+            });
+
+        },
+        methods: {
+            createChart(chartId, chartData) {
+                const ctx = document.getElementById(chartId);
+                const myChart = new Chart(ctx, {
+                    type: chartData.type,
+                    data: chartData.data,
+                    options: chartData.options,
+                });
+            }
+        }
+    }
+
+    
+    
+</script>
